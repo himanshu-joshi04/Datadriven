@@ -34,16 +34,14 @@ public class WritingDynamicDataIntoExcel {
 			  {
 				  XSSFCell cell=CurrentRow.createCell(c);
 					cell.setCellValue(sc.next());
-
-			  }
+		}
 			  
 		  }
 		
 		workbook.write(file); 
 		workbook.close();
 		file.close();
-		
-		System.out.println("File is creataed.....");
+	    System.out.println("File is creataed.....");
 
 	}
 
